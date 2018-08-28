@@ -92,3 +92,10 @@ def purify(numbers):
         if number % 2 == 0:
             even_numbers.append(number)
     return even_numbers
+
+"""Multiplying elements in a list"""
+def product(number_list):
+    prod = 1
+    for number in number_list:
+        prod *= number
+    return prod
