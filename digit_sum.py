@@ -77,4 +77,11 @@ def censor(text, word):
            text =  text.replace(wrd, new_text)
     return text
 
+"""Counting the number of times an item occurs in a list"""
+def count(sequence, item):
+    new_sequence = []
+    for seq_item in sequence:
+        if seq_item == item:
+            new_sequence.append(seq_item)
+    return (len(new_sequence))
         
