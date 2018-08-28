@@ -99,3 +99,10 @@ def product(number_list):
     for number in number_list:
         prod *= number
     return prod
+"""Removing duplicates from a list"""
+def remove_duplicates(elementList):
+    new_list = []
+    for element in elementList:
+        if element not in new_list:
+            new_list.append(element)
+    return new_list 
