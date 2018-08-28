@@ -49,3 +49,24 @@ def anti_vowel(text):
         if char not in vowels:
              new_word.append(char)
     return ''.join(new_word)
+
+"""Scrabble score"""
+score = {"a": 1, "c": 3, "b": 3, "e": 1, "d": 2, "g": 2, 
+         "f": 4, "i": 1, "h": 4, "k": 5, "j": 8, "m": 3, 
+         "l": 1, "o": 1, "n": 1, "q": 10, "p": 3, "s": 1, 
+         "r": 1, "u": 1, "t": 1, "w": 4, "v": 4, "y": 4, 
+         "x": 8, "z": 10}
+
+def scrabble_score(word):
+    total_score = 0
+    word = word.lower()
+    if word == '':
+        return total_score
+    else:
+        for char in word:
+            if char in score:
+                total_score += score[char]
+        return total_score
+
+
+        
