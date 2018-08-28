@@ -68,5 +68,13 @@ def scrabble_score(word):
                 total_score += score[char]
         return total_score
 
+""" String replacement/censoring"""
+def censor(text, word):
+    textList = text.split(' ')
+    for wrd in textList:
+        if wrd == word:
+           new_text = '*' * len(wrd)
+           text =  text.replace(wrd, new_text)
+    return text
 
         
