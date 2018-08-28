@@ -106,3 +106,20 @@ def remove_duplicates(elementList):
         if element not in new_list:
             new_list.append(element)
     return new_list 
+
+"""Finding the median of a list"""
+def median(num_list):
+     from math import floor
+     index = 0
+     median_number = 0
+     sortedList = sorted(num_list)
+     listLength = len(sortedList)
+     if listLength % 2 != 0:
+         index += floor((listLength *0.5) + 1)
+         median_number += sortedList[index -1]
+         return (int(median_number))
+     else:
+        index += floor((listLength *0.5))
+        median_number += sortedList[index-1] + sortedList[index]
+        return (int( median_number))
+     
