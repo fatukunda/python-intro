@@ -1,23 +1,23 @@
-# def digit_sum(number):
-#     numbers = str(number)
-#     total = 0
-#     for number in numbers:
-#         total += int(number)
-#     print(total)
+def digit_sum(number):
+    numbers = str(number)
+    total = 0
+    for number in numbers:
+        total += int(number)
+    print(total)
     
-# digit_sum(123)
+digit_sum(123)
 
 """ Calculating factorial of a number"""
-# def factorial(x):
-#     if x == 1:
-#         return 1
-#     elif x == 0:
-#         return 0
-#     else:
-#         factorial = 1
-#         for number in range(1, x+1):
-#             factorial *= number
-#         return factorial
+def factorial(x):
+    if x == 1:
+        return 1
+    elif x == 0:
+        return 0
+    else:
+        factorial = 1
+        for number in range(1, x+1):
+            factorial *= number
+        return factorial
 
 
 """ Testing if a given number is a prime number"""
@@ -41,5 +41,11 @@ def reverse(text):
         text_length -= 1
     return (''.join(reversed))
 
-            
-    
+"""Removing vowels from a given text"""
+def anti_vowel(text):
+    vowels = ['a', 'e', 'i','o','u', 'A', 'E', 'I', 'O', 'U' ]
+    new_word = []
+    for char in text:
+        if char not in vowels:
+             new_word.append(char)
+    return ''.join(new_word)
