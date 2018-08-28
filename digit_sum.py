@@ -31,3 +31,15 @@ def is_prime(x):
             else:
                 return True
 
+"""Reversing a given string"""
+def reverse(text):
+    reversed = []
+    text_length = len(text)
+    while text_length > 0:
+        last_char = text[text_length-1]
+        reversed.append(last_char)
+        text_length -= 1
+    return (''.join(reversed))
+
+            
+    
