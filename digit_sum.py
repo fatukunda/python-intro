@@ -85,3 +85,10 @@ def count(sequence, item):
             new_sequence.append(seq_item)
     return (len(new_sequence))
         
+"""Filtering a list"""
+def purify(numbers):
+    even_numbers = []
+    for number in numbers:
+        if number % 2 == 0:
+            even_numbers.append(number)
+    return even_numbers
